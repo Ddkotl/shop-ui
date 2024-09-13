@@ -1,9 +1,9 @@
 export interface IStore {
-  id: string;
-  name: string;
-  description: string;
+	id: string
+	title: string
+	description: string
 }
 
-export interface IStoreCreate extends Pick<IStore, "name"> {}
+export interface IStoreCreate extends Pick<IStore, 'title'> {}
 
-export interface IStoreEdit extends Omit<IStore, "id"> {}
+export interface IStoreEdit extends Omit<IStore, 'id'> {}
